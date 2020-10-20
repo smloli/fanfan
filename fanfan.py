@@ -8,6 +8,7 @@ def get_html(url):
     html.encoding = 'gbk'
     return html.text
 
+
 def get_xpath():
     space = '\u3000'
     mode = int(input('0.单本下载\t1.批量下载\nnum:'))
@@ -89,6 +90,7 @@ def get_xpath():
                 j+=1
         end = time.time()
         print(f'耗时:{end-start:.2f}s')
+
 if __name__=='__main__':
     headers = {'UserAgent':'Mozilla/5.0 (Linux; Android 10; SM-G9880 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.111 Mobile Safari/537.36'}
     http = 'https://bbs.fanfann.com/'
